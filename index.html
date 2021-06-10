@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить сделку</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="columns is-justify-content-center is-align-content-center" style="margin-top: 100px;">
+        <div class="column is-one-third is-flex is-justify-content-center is-align-content-center is-flex-direction-column">
+            <form action="/handler.php" method="POST">
+                <div class="field">
+                    <label class="label">Имя</label>
+                    <div class="control">
+                        <input class="input" name="name" type="text" placeholder="Vasya">
+                    </div>
+                </div>
+        
+                <div class="field">
+                    <label class="label">Почта</label>
+                    <div class="control">
+                        <input class="input" name="email" type="email" placeholder="vasya@gmail.com">
+                    </div>
+                </div>
+        
+                <div class="field">
+                    <label class="label">Телефон</label>
+                    <div class="control">
+                        <input class="input" name="phone" type="text" placeholder="+8987654321">
+                    </div>
+                </div>
+        
+                <div class="field">
+                    <div class="control">
+                        <button id="submit" class="button is-link is-fullwidth">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
